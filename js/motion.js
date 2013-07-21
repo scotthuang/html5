@@ -40,6 +40,16 @@ var easing = {
 		elm.style.top = newPos + 'px';
 	},
 
+	'horizonMotion': function(elm, rate){
+		var newPos;
+		var pullMax = window.innerWidth;
+		this.pullOffset = easing.liner(rate);
+
+		newPos = pullMax * this.pullOffset;
+		alert(newPos);
+		elm.style.left = newPos + 'px';
+	},
+
 	'pullReleaseMotion': function(elm, startTime, startY){
 		var duration = (new Date().getTime() - startTime) / (this.pullBackTime);
 		var newPos;

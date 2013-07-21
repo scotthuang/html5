@@ -5,6 +5,11 @@ body { background: none repeat scroll 0 0 #FAFAFA; font-size: 14px; margin: 0;}
 ul { padding-left: 10px; margin: 0;}
 li { display: inline-block; float: left; text-decoration: none; color: #FFF;}
 
+#warpper {
+	width: 320px;
+	overflow-x: hidden; 
+}
+
 #header {
 	background: -webkit-gradient(linear, 0 0, 0 100%, from(#4b4b4b), to(#343434));
 	background: -moz-linear-gradient(top, #4b4b4b, #343434);
@@ -24,7 +29,7 @@ li { display: inline-block; float: left; text-decoration: none; color: #FFF;}
 #menu-mess, #menu-fans { width: 50%; color: #7c7c7c;}
 
 /* page */
-.tweet-page { overflow: hidden; position: relative;}
-.tweet-page > div { float: left;}
+.tweet-page { overflow: hidden; position: relative; width: 960px;}
+.tweet-page > div { float: left; width: 320px;}
 .tweet-main { }
-.tweet-mine, .tweet-spec { display: none;}
+.tweet-mine, .tweet-spec { display: block;}
